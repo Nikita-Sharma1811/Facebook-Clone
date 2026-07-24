@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    height: 100vh;
+    background-color: #f0f2f5;
+
+}
+.main {
+    width: 420px;
+    /* height: 650px; ❌ hata do */
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+/* .main {
+    width: 420px;
+    height: 650px;
+    background-color: white;
+  
+    text-align: center;
+    padding: 40px;
+    
+    
+
+    
+
+} */
+
+#fb h1 {
+    color:#1877f2;
+    margin-top: 60px;
+    
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+input {
+    width:100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fce8e6;
+    margin-top: 16px;
+    
+    justify-content: center;
+
+}
+.btn{
+    width:100%;
+    margin-top: 16px;
+    padding:12px;
+    font-size:16px;
+    background-color: #1877f2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border:white;
+    font-weight:bolder;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 8px;
+     transition: 0.3s;
+    
+}
+.btn:hover {
+    background-color:rgb(67, 67, 189);
+   
+}
+h4{
+    color:#1877f2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px;
+    font-weight: lighter;
+    
+}
+
+
+ .divider{
+    display: flex;
+    align-items: center;
+ }
+ .divider hr {
+    flex: 1;
+}
+.divider span {
+    margin: 0 10px;
+}
+.new{
+    margin-top:20px;
+    padding:9px;
+    width:55%;
+    align-items: center;
+    background-color:rgb(6, 172, 6);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.new:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+   
+    margin-top: 50px;
+    list-style: none;
+    gap: 25px;
+    font-size: 12px;
+    color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+   
+}
+.end ul li:hover {
+    text-decoration: underline;
+    color:darkgrey;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    color:darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top:14px;
+
+}
+
