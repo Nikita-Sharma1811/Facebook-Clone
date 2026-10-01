@@ -7,7 +7,7 @@ async function signup() {
     return;
   }
 
-  const res = await fetch("https://facebook-clone-2-4tf1.onrender.com/api/signup", {
+  const res = await fetch("https://facebook-clone-3j2d.onrender.com/api/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -30,7 +30,7 @@ async function login() {
     return;
   }
 
-  const res = await fetch("https://facebook-clone-2-4tf1.onrender.com/api/login", {
+  const res = await fetch("https://facebook-clone-3j2d.onrender.com/api/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
