@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config();
 
 const app = express();
-//facebook-black-pi.vercel.app/
+
 
 app.use(cors({
     origin: "https://facebook-black-pi.vercel.app"
