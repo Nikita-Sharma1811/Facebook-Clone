@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3000";
+const API_BASE = "https://facebook-clone-2-4tf1.onrender.com";
 
 function switchTab(tab) {
     document.querySelectorAll(".tab-btn").forEach((btn) => {
