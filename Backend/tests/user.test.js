@@ -29,7 +29,7 @@ describe("User Signup API", () => {
             });
 
         expect(response.statusCode).toBe(200);
-       expect(response.text).toContain("WRONG");
+       expect(response.text).toContain("Please fill all fields");
     });
 
     // Test 2
