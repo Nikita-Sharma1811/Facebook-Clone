@@ -124,6 +124,8 @@ Backend/tests/user.test.js
 | 2         | Signup with missing/empty password   | `Please fill all fields` |
 | 3         | Login with invalid credentials       | `Invalid credentials`    |
 | 4         | Login with empty email and password  | `Please fill all fields` |
+
+
 GitHub Actions CI
 
 GitHub Actions automatically runs the backend tests when code is pushed to the main branch or when a pull request is created.
