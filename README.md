@@ -72,13 +72,9 @@ https://github.com/Nikita-Sharma1811/Facebook-Clone.git
 - dotenv
 - multer
 - bcryptjs
-- express-session (if used)
-
----
-
 ## 📂 Project Structure
 
-```
+
 Facebook-Clone/
 │
 ├── Backend/
