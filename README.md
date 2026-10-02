@@ -1,16 +1,58 @@
-# Facebook-Clone
-A full-stack Facebook Clone built using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB. The application includes user authentication, post creation, image uploads, and a responsive interface, providing core social media functionality through a RESTful backend.
+# Facebook Clone
 
-## 🚀 Features
+A full-stack Facebook Clone web application built using React, Node.js, Express.js, and MongoDB. The project is deployed on cloud platforms and includes automated backend testing with GitHub Actions CI.
 
-- User Registration
-- User Login Authentication
-- Create Posts
-- Image Upload Support
-- MongoDB Database Integration
-- Responsive User Interface
-- Express.js REST API
-- Secure Password Storage
+## 🚀 Live Demo
+
+**Frontend:** https://facebook-black-pi.vercel.app/
+
+**Backend:** https://facebook-clone-3j2d.onrender.com/
+
+**GitHub Repository:** 
+
+---
+
+
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                    User
+                     |
+                     v
+              +-------------+
+              |   Vercel    |
+              |  Frontend   |
+              +-------------+
+                     |
+                     | API Requests
+                     v
+              +-------------+
+              |   Render    |
+              | Node +      |
+              | Express     |
+              +-------------+
+                     |
+                     | MongoDB Connection
+                     v
+              +-------------+
+              | MongoDB     |
+              | Atlas       |
+              +-------------+
+
+
+             GitHub Repository
+                     |
+                     v
+              GitHub Actions
+                     |
+                     v
+              Automated Tests
+                     |
+                PASS / FAIL
+
 
 ---
 
@@ -71,72 +113,87 @@ Facebook-Clone/
 │   └── post.js
 │
 └── README.md
-```
 
----
+### Automated Testing
 
-## ⚙️ Installation
+The backend contains 4 automated API test cases.
 
-### Clone the repository
+Test file:
 
-```bash
-git clone https://github.com/your-username/facebook-clone.git
-```
+Backend/tests/user.test.js
+| Test Case | Description                          | Expected Result          |
+| --------- | ------------------------------------ | ------------------------ |
+| 1         | Signup with empty email and password | `Please fill all fields` |
+| 2         | Signup with missing/empty password   | `Please fill all fields` |
+| 3         | Login with invalid credentials       | `Invalid credentials`    |
+| 4         | Login with empty email and password  | `Please fill all fields` |
+GitHub Actions CI
 
-### Navigate to the project
+GitHub Actions automatically runs the backend tests when code is pushed to the main branch or when a pull request is created.
 
-```bash
-cd facebook-clone
-```
+Workflow file:
 
-### Install backend dependencies
+.github/workflows/ci.yml
 
-```bash
+The CI workflow performs the following steps:
+
+Checkout Code
+      ↓
+Setup Node.js
+      ↓
+Install Dependencies
+      ↓
+Run Tests
+      ↓
+4 Automated Tests
+      ↓
+PASS / FAIL
+
+If all tests pass, the workflow completes successfully.
+
+If a test fails, the GitHub Actions workflow fails.
+
+##  Run the Project
+Start Backend
 cd Backend
 npm install
-```
-
----
-
-## 🔐 Environment Variables
-
-Create a `.env` file inside the **Backend** folder.
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-SESSION_SECRET=your_secret_key
-```
-
----
-
-## ▶️ Run the Project
-
-### Start Backend
-
-```bash
-npm start
-```
-
-or
-
-```bash
-npm run dev
-```
+npm start 
 
 ### Open Frontend
-
 Open the `index.html` file in your browser or use a Live Server extension in VS Code.
 
+###Run Tests
 
-## 📖 Learning Outcomes
+Inside the Backend folder:
 
-- Building REST APIs with Express.js
-- Connecting Node.js with MongoDB
-- User Authentication
-- CRUD Operations
-- Image Upload using Multer
-- Backend Routing
-- Database Design with Mongoose
+npm test
+
+Expected result:
+
+Test Suites: 1 passed
+Tests:       4 passed
+
+###Deployment
+####Frontend
+
+The frontend is deployed using Vercel.
+
+####Backend
+
+The backend is deployed using Render.
+
+####Database
+
+The application uses MongoDB Atlas as the cloud database.
+
+The deployed frontend communicates with the deployed backend through API requests.
+
+###Environment Variables
+
+Sensitive configuration such as the MongoDB connection string is stored using environment variables.
+
+The .env file is excluded from Git using .gitignore and should not be uploaded to GitHub.
+
+
 
 
