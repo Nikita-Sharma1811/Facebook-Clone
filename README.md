@@ -10,11 +10,8 @@ A full-stack Facebook Clone web application built using React, Node.js, Express.
 
 **GitHub Repository:** 
 
----
+https://github.com/Nikita-Sharma1811/Facebook-Clone.git
 
-
-
----
 
 ## 🏗️ System Architecture
 
