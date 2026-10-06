@@ -29,7 +29,8 @@ describe("User Signup API", () => {
             });
 
         expect(response.statusCode).toBe(200);
-       expect(response.text).toContain("Please fill all fields");
+        expect(response.text).toContain("Please fill all fields");
+        // expect(response.text).toContain("Wrong message");
     });
 
     // Test 2
@@ -76,5 +77,3 @@ describe("User Signup API", () => {
     });
 
 });
-
-//hello 
