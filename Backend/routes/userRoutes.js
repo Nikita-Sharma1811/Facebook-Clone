@@ -9,7 +9,7 @@ router.post("/signup", async (req, res) => {
         const { email, password } = req.body;
 
         // check empty fields
-        if (!email || !password) {
+        if (!email ) {
             return res.send("Please fill all fields ❌");
         }
 
